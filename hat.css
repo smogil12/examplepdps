@@ -1,0 +1,27 @@
+#tt-instant-answers-widget {
+  margin-top: 100px;
+}
+
+#tt-qa-list {
+  margin-bottom: 20px;
+}
+
+#tt-subdimension-teaser {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.tt-o-byline__author {
+  display: none !important;
+}
+
+.tt-c-ratings-breakdown__rating-number,
+.tt-c-ratings-breakdown__percent {
+  color: greenyellow !important;
+}
+
+.tt-o-button--primary,
+button.tt-o-button--primary {
+  background-color: red !important;
+}
