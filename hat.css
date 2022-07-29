@@ -1,3 +1,10 @@
+@media only screen and (max-width: 600px) {
+  .tt-o-button--primary,
+  button.tt-o-button--primary {
+    background-color: red !important;
+  }
+}
+
 #tt-instant-answers-widget {
   margin-top: 100px;
 }
@@ -21,7 +28,4 @@
   color: greenyellow !important;
 }
 
-.tt-o-button--primary,
-button.tt-o-button--primary {
-  background-color: red !important;
-}
+
