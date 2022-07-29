@@ -2,6 +2,7 @@
   .tt-o-button--primary,
   button.tt-o-button--primary {
     background-color: red !important;
+    margin-top: 100px;
   }
 }
 
