@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hat</title>
+    <script>
+      var turnToConfig = {
+        locale: "en_US",
+        pageId: "pdp-page",
+        sku: "redglove1,24",
+        reviewsList: {
+          // onFinish: function(){}
+        },
+      };
+      window.TurnToCmd =
+        window.TurnToCmd ||
+        function () {
+          (TurnToCmd.q = TurnToCmd.q || []).push(arguments);
+        };
+    </script>
+    <script
+      src="https://widgets.turnto.com/v5/widgets/qM9izDb9x6YaGMxsite/js/turnto.js"
+      async
+    ></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Nike Hat Fitted",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/99be59d7-2f04-4c1d-89cc-3e834b84aeca/heritage86-adjustable-skate-hat-s5vF8l.jpg",
+        "description": "Amazing fitted hat",
+        "sku": "AQ0001-003"
+      }
+    </script>
+  </head>
+  <body>
+    <h1>test new new</h1>
+    <div id="tt-reviews-summary"></div>
+    <div id="tt-reviews-list"></div>
+
+    <div id="tt-subdimension-teaser"></div>
+
+    <div id="tt-instant-answers-widget"></div>
+    <div id="tt-qa-list"></div>
+
+    <div id="pixlee_container"></div>
+    <script type="text/javascript">
+      window.PixleeAsyncInit = function () {
+        Pixlee.init({ apiKey: "M23iOlzIL35F8stTvQGG" });
+        Pixlee.addSimpleWidget({ widgetId: 6745421 });
+      };
+    </script>
+    <script src="https://assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>
+  </body>
+</html>
