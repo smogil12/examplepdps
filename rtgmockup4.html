@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Review Form</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  .star-rating {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .star-rating input {
+    display: none;
+  }
+  .star-rating label {
+    color: #d2d2d2;
+  }
+  .star-rating input:checked ~ label,
+  .star-rating label:hover,
+  .star-rating label:hover ~ label {
+    color: #facc15;
+  }
+</style>
+</head>
+<body class="bg-white text-gray-700">
+<div class="container mx-auto px-4 py-8">
+  <div class="w-full max-w-2xl mx-auto bg-white shadow-lg rounded-lg p-6">
+    <h1 class="text-2xl font-semibold mb-4">Rate Your Product</h1>
+    <div class="mb-4">
+      <h2 class="font-semibold mb-1">Overall Rating:</h2>
+      <div class="star-rating">
+        <input type="radio" id="5-stars" name="rating" value="5" />
+        <label for="5-stars">&#9733;</label>
+        <input type="radio" id="4-stars" name="rating" value="4" />
+        <label for="4-stars">&#9733;</label>
+        <input type="radio" id="3-stars" name="rating" value="3" />
+        <label for="3-stars">&#9733;</label>
+        <input type="radio" id="2-stars" name="rating" value="2" />
+        <label for="2-stars">&#9733;</label>
+        <input type="radio" id="1-star" name="rating" value="1" />
+        <label for="1-star">&#9733;</label>
+      </div>
+    </div>
+    <div class="mb-4">
+      <label for="review-title" class="font-semibold mb-1">Give your review a title: (Optional)</label>
+      <input type="text" id="review-title" placeholder="Your overall impression (150 characters or less)" class="w-full p-2 border rounded" />
+    </div>
+    <div class="mb-4">
+      <label for="review-text" class="font-semibold mb-1">Tell us about your product: (Optional)</label>
+      <textarea id="review-text" placeholder="Make your review great: Describe what you liked, what you didn't like, and other key things shoppers should know (minimum 10 characters)" class="w-full p-2 border rounded h-24"></textarea>
+    </div>
+    <p class="text-xs mb-4">Do not include personal information in your review (email, phone number, full name, etc.). Your review, including any personal information, may be published on our website. If you would like to contact customer service, please click <a href="#" class="text-blue-500">here</a>.</p>
+    <p class="text-xs mb-4">By submitting a review, I agree to the <a href="#" class="text-blue-500">Privacy Policy</a> of Rooms To Go.</p>
+    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">SUBMIT REVIEW</button>
+    
+    <div class="mt-8">
+      <h2 class="font-semibold mb-1">Experience rating <span class="text-red-500">*</span></h2>
+      <div class="star-rating">
+        <input type="radio" id="exp-5-stars" name="experience-rating" value="5" />
+        <label for="exp-5-stars">&#9733;</label>
+        <input type="radio" id="exp-4-stars" name="experience-rating" value="4" />
+        <label for="exp-4-stars">&#9733;</label>
+        <input type="radio" id="exp-3-stars" name="experience-rating" value="3" />
+        <label for="exp-3-stars">&#9733;</label>
+        <input type="radio" id="exp-2-stars" name="experience-rating" value="2" />
+        <label for="exp-2-stars">&#9733;</label>
+        <input type="radio" id="exp-1-star" name="experience-rating" value="1" />
+        <label for="exp-1-star">&#9733;</label>
+      </div>
+    </div>
+    <div class="mb-4 mt-4">
+      <label for="experience-text" class="font-semibold mb-1">Review <span class="text-red-500">*</span></label>
+      <textarea id="experience-text" placeholder="Consider your shopping, delivery, and customer service experience." class="w-full p-2 border rounded h-24"></textarea>
+    </div>
+    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">SUBMIT RATING</button>
+  </div>
+</div>
+<script>
+  // Add your JavaScript here if needed
+</script>
+</body>
+</html>
