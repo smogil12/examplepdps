@@ -26,7 +26,7 @@
 
 .tt-c-ratings-breakdown__rating-number,
 .tt-c-ratings-breakdown__percent {
-  color: greenyellow !important;
+  color: red !important;
 }
 
 
